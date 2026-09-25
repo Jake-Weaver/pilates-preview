@@ -5,132 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <title>Riverstone Pilates | Schuylkill County, PA</title>
-<meta name="description" content="Restorative Pilates in Schuylkill County, PA. Private reformer sessions, small-group mat classes and a guided Restore series for backs, joints and posture.">
+<meta name="description" content="Pilates in Schuylkill County, PA. Private reformer sessions and small-group mat classes.">
 <meta name="theme-color" content="#2f4a44">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cellipse cx='32' cy='36' rx='26' ry='18' fill='%232f4a44'/%3E%3Cellipse cx='28' cy='32' rx='14' ry='8' fill='%23c9d6cc'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --river:#2f4a44; --river-deep:#1f332f; --sage:#8fa89a; --mist:#c9d6cc;
-    --stone:#f4f1ec; --sand:#e8e0d4; --clay:#b9876b; --ink:#26302d; --muted:#5d6b66;
-    --radius:22px; --max:1080px;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--stone);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
-  h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:300;line-height:1.15;color:var(--river-deep)}
-  h1{font-size:clamp(2.4rem,9vw,4.4rem)}
-  h2{font-size:clamp(1.9rem,6vw,2.8rem);margin-bottom:.6rem}
-  h3{font-size:1.3rem;font-weight:500;margin-bottom:.35rem}
-  a{color:inherit}
-  .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
-  .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;font-weight:600;color:var(--clay);margin-bottom:.8rem;display:block}
-  .lead{font-size:1.1rem;color:var(--muted);max-width:40rem}
-  section{padding:76px 0}
-
-  /* nav */
-  header{position:sticky;top:0;z-index:20;background:rgba(244,241,236,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(47,74,68,.08)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-  .logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:Fraunces,serif;font-size:1.25rem;color:var(--river-deep)}
-  .logo svg{width:30px;height:30px}
-  .nav ul{display:none;list-style:none;gap:28px;font-size:.92rem}
-  .nav ul a{text-decoration:none;color:var(--muted)}
-  .nav ul a:hover{color:var(--river)}
-  .btn{display:inline-block;background:var(--river);color:#fff;text-decoration:none;padding:14px 26px;border-radius:999px;font-weight:600;font-size:.95rem;border:0;cursor:pointer;transition:background .2s,transform .2s}
-  .btn:hover{background:var(--river-deep);transform:translateY(-1px)}
-  .btn.ghost{background:transparent;color:var(--river);box-shadow:inset 0 0 0 1.5px var(--river)}
-  .btn.small{padding:9px 18px;font-size:.85rem}
-  @media(min-width:860px){.nav ul{display:flex}}
-
-  /* hero */
-  .hero{padding:56px 0 70px;position:relative;overflow:hidden}
-  .hero .wrap{display:grid;gap:44px;align-items:center}
-  .hero p.lead{margin:1.2rem 0 2rem}
-  .hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
-  .hero-art{position:relative;aspect-ratio:1/1;max-width:440px;width:100%;margin:0 auto}
-  .hero-art svg{width:100%;height:100%}
-  .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
-  .badge{background:#fff;border-radius:999px;padding:7px 14px;font-size:.82rem;color:var(--muted);box-shadow:0 1px 0 rgba(0,0,0,.04)}
-  @media(min-width:860px){.hero .wrap{grid-template-columns:1.1fr .9fr}.hero{padding:90px 0 100px}}
-
-  /* pillars */
-  .pillars{background:#fff}
-  .grid{display:grid;gap:18px;margin-top:38px}
-  @media(min-width:700px){.grid.three{grid-template-columns:repeat(3,1fr)}.grid.two{grid-template-columns:repeat(2,1fr)}}
-  .card{background:var(--stone);border-radius:var(--radius);padding:28px}
-  .card .ic{width:44px;height:44px;border-radius:14px;background:var(--mist);display:grid;place-items:center;margin-bottom:16px}
-  .card .ic svg{width:22px;height:22px;stroke:var(--river);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-  .card p{color:var(--muted);font-size:.97rem}
-
-  /* who */
-  .who-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
-  .who-list span{background:#fff;border:1px solid var(--sand);border-radius:999px;padding:10px 18px;font-size:.93rem}
-
-  /* process */
-  .process{background:var(--river);color:#e9efec}
-  .process h2,.process h3{color:#fff}
-  .process .lead{color:#c3d1cb}
-  .steps{counter-reset:s;display:grid;gap:18px;margin-top:38px}
-  @media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
-  .step{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:28px}
-  .step::before{counter-increment:s;content:"0" counter(s);font-family:Fraunces,serif;font-size:2.2rem;color:var(--mist);display:block;margin-bottom:10px}
-  .step p{color:#c3d1cb;font-size:.96rem}
-
-  /* sessions */
-  .session{background:#fff;border-radius:var(--radius);padding:30px;display:flex;flex-direction:column;border:1px solid var(--sand)}
-  .session .price{font-family:Fraunces,serif;font-size:2rem;color:var(--river-deep);margin:10px 0 2px}
-  .session .per{font-size:.85rem;color:var(--muted);margin-bottom:14px}
-  .session ul{list-style:none;margin:6px 0 22px;flex:1}
-  .session li{padding:7px 0 7px 26px;position:relative;font-size:.95rem;color:var(--muted);border-top:1px solid var(--stone)}
-  .session li::before{content:"";position:absolute;left:4px;top:15px;width:10px;height:10px;border-radius:50%;background:var(--mist)}
-  .session.featured{background:var(--river-deep);color:#e9efec;border-color:var(--river-deep)}
-  .session.featured h3,.session.featured .price{color:#fff}
-  .session.featured li,.session.featured .per{color:#c3d1cb;border-color:rgba(255,255,255,.08)}
-  .session.featured .btn{background:var(--clay)}
-  .tag{align-self:flex-start;background:var(--clay);color:#fff;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:5px 11px;border-radius:999px;margin-bottom:12px}
-
-  /* quote */
-  .quote{text-align:center;padding:84px 0}
-  .quote blockquote{font-family:Fraunces,serif;font-weight:300;font-size:clamp(1.5rem,5vw,2.3rem);line-height:1.35;color:var(--river-deep);max-width:46rem;margin:0 auto}
-  .quote cite{display:block;margin-top:18px;font-style:normal;color:var(--muted);font-size:.9rem}
-
-  /* faq */
-  .faq{background:#fff}
-  details{border-bottom:1px solid var(--sand);padding:20px 0}
-  details:first-of-type{border-top:1px solid var(--sand);margin-top:30px}
-  summary{cursor:pointer;list-style:none;font-weight:600;display:flex;justify-content:space-between;gap:16px}
-  summary::-webkit-details-marker{display:none}
-  summary::after{content:"+";font-family:Fraunces,serif;font-size:1.5rem;line-height:1;color:var(--clay);transition:transform .2s}
-  details[open] summary::after{transform:rotate(45deg)}
-  details p{color:var(--muted);margin-top:10px;max-width:44rem}
-
-  /* contact */
-  .contact .wrap{display:grid;gap:40px}
-  @media(min-width:860px){.contact .wrap{grid-template-columns:.9fr 1.1fr}}
-  form{background:#fff;border-radius:var(--radius);padding:28px;display:grid;gap:14px}
-  label{font-size:.82rem;font-weight:600;color:var(--muted);display:grid;gap:6px}
-  input,select,textarea{font:inherit;font-size:16px;padding:13px 14px;border:1px solid var(--sand);border-radius:12px;background:var(--stone);color:var(--ink);width:100%}
-  input:focus,select:focus,textarea:focus{outline:2px solid var(--sage);border-color:transparent}
-  textarea{min-height:110px;resize:vertical}
-  .towns{margin-top:22px;color:var(--muted);font-size:.93rem}
-  .towns strong{color:var(--ink)}
-  .note{font-size:.8rem;color:var(--muted)}
-
-  footer{background:var(--river-deep);color:#a9bbb4;padding:40px 0 calc(40px + env(safe-area-inset-bottom));font-size:.88rem}
-  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
-
-  /* sticky mobile CTA */
-  .mcta{position:fixed;left:14px;right:14px;bottom:calc(14px + env(safe-area-inset-bottom));z-index:30;text-align:center;box-shadow:0 10px 30px rgba(31,51,47,.35)}
-  @media(min-width:860px){.mcta{display:none}}
-
-  .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
-  .reveal.in{opacity:1;transform:none}
-  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.breath{animation:none!important}}
-  .breath{animation:breathe 8s ease-in-out infinite;transform-origin:center}
-  @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -141,6 +22,7 @@
       Riverstone Pilates
     </a>
     <ul>
+      <li><a href="about.html">About</a></li>
       <li><a href="#approach">Approach</a></li>
       <li><a href="#first-visit">First visit</a></li>
       <li><a href="#sessions">Sessions</a></li>
@@ -155,12 +37,12 @@
 <section class="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Restorative Pilates · Schuylkill County, PA</span>
-      <h1>Move well.<br>Feel better.<br>Stay that way.</h1>
-      <p class="lead">Like a river smooths a stone, steady, careful movement reshapes how your body feels. Private and small-group Pilates built around <em>your</em> body: your history, your aches, your goals.</p>
+      <span class="eyebrow">Pilates · Schuylkill County, PA</span>
+      <h1>Move well.<br>Feel better.</h1>
+      <p class="lead">Private and small-group Pilates, built around your body and your goals.</p>
       <div class="ctas">
         <a class="btn" href="#contact">Book a first session</a>
-        <a class="btn ghost" href="#approach">Our approach</a>
+        <a class="btn ghost" href="about.html">About us</a>
       </div>
       <div class="badges">
         <span class="badge">Reformer &amp; mat</span>
@@ -194,23 +76,22 @@
 <section class="pillars" id="approach">
   <div class="wrap reveal">
     <span class="eyebrow">Our approach</span>
-    <h2>Pilates with a restorative lens</h2>
-    <p class="lead">We start with how your body moves today, not with a routine off a poster. Every session is built on three ideas.</p>
+    <h2>How we work</h2>
     <div class="grid three">
       <div class="card">
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M7 8l5-5 5 5M7 16l5 5 5-5"/></svg></div>
         <h3>Alignment first</h3>
-        <p>Posture, spine and joints come before reps. We look at how you stand, sit and move, then build strength from a balanced base.</p>
+        <p>Good form before more reps. We fix how you move, then add strength.</p>
       </div>
       <div class="card">
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12c3-6 6-6 9 0s6 6 9 0"/></svg></div>
         <h3>Breath &amp; control</h3>
-        <p>Slow, deliberate movement paired with breathing that calms the nervous system and builds deep core support.</p>
+        <p>Slow, controlled work that builds a strong core.</p>
       </div>
       <div class="card">
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 20c4-1 6-4 6-8V4M20 20c-4-1-6-4-6-8V4"/></svg></div>
         <h3>Progress, not pain</h3>
-        <p>Every exercise has a gentler and a harder version. We meet you where you are and move forward at a pace your body trusts.</p>
+        <p>Every exercise can be made easier or harder. We go at your pace.</p>
       </div>
     </div>
   </div>
@@ -219,8 +100,7 @@
 <section id="who">
   <div class="wrap reveal">
     <span class="eyebrow">Who we help</span>
-    <h2>If your body has been asking for a change</h2>
-    <p class="lead">Most clients come to us with something specific in mind. A few of the most common:</p>
+    <h2>Who comes to us</h2>
     <div class="who-list">
       <span>Nagging low-back or neck pain</span>
       <span>Returning after an injury or surgery</span>
@@ -238,12 +118,12 @@
 <section class="process" id="first-visit">
   <div class="wrap reveal">
     <span class="eyebrow" style="color:#d8b39c">Your first visit</span>
-    <h2>A plan built around you</h2>
-    <p class="lead">No guesswork, no one-size-fits-all class. Your first session is one-on-one.</p>
+    <h2>What to expect</h2>
+    <p class="lead">Your first session is one-on-one.</p>
     <div class="steps">
-      <div class="step"><h3>Movement assessment</h3><p>We talk through your history and goals, then look at posture, mobility, balance and how you breathe.</p></div>
-      <div class="step"><h3>Your personal plan</h3><p>You leave with a clear picture of what we'll work on, which sessions fit you best, and a few moves to start at home.</p></div>
-      <div class="step"><h3>Steady progress</h3><p>We check in regularly and adjust as you get stronger. When you're ready, small-group classes keep the momentum going.</p></div>
+      <div class="step"><h3>Movement assessment</h3><p>We talk about your history and goals and check posture, mobility and balance.</p></div>
+      <div class="step"><h3>Your personal plan</h3><p>You leave knowing what to work on and which sessions fit you.</p></div>
+      <div class="step"><h3>Steady progress</h3><p>We adjust as you get stronger. Join a group class when you're ready.</p></div>
     </div>
   </div>
 </section>
@@ -252,7 +132,7 @@
   <div class="wrap reveal">
     <span class="eyebrow">Sessions</span>
     <h2>Ways to work with us</h2>
-    <p class="lead">Start private, then mix and match. Packages available for every option.</p>
+    <p class="lead">Packages available.</p>
     <div class="grid three">
       <div class="session">
         <h3>Private Reformer</h3>
@@ -275,8 +155,8 @@
       </div>
     </div>
     <div class="grid two" style="margin-top:18px">
-      <div class="card"><h3>Duet sessions</h3><p>Train with a partner, friend or family member. Private attention, shared cost. $50 each.</p></div>
-      <div class="card"><h3>Gentle Back Care class</h3><p>A slow, supportive class focused on spine mobility and core stability. Great for easing back into movement.</p></div>
+      <div class="card"><h3>Duet sessions</h3><p>Train with a friend or partner. $50 each.</p></div>
+      <div class="card"><h3>Gentle Back Care class</h3><p>A slower class for spine mobility and core strength.</p></div>
     </div>
   </div>
 </section>
@@ -292,12 +172,12 @@
   <div class="wrap reveal">
     <span class="eyebrow">Questions</span>
     <h2>Good to know</h2>
-    <details><summary>I've never done Pilates. Is that okay?</summary><p>Absolutely. Most of our clients are new to it. Your first session is private so you can learn the basics at your own pace.</p></details>
-    <details><summary>I have an injury or chronic pain. Can I still come?</summary><p>Yes, that's a big part of what we do. Tell us about it when you book and we'll build your sessions around it. If you're under a doctor's care, let us know and bring any guidance you've been given.</p></details>
-    <details><summary>Do I need the reformer, or is mat enough?</summary><p>Both work. The reformer's springs can support you or challenge you, which makes it ideal for rebuilding strength. Mat classes are a great, affordable way to keep your progress going.</p></details>
-    <details><summary>What should I wear?</summary><p>Comfortable clothes you can move in and grip socks (we have them if you forget). No shoes on the equipment.</p></details>
-    <details><summary>Where are you located?</summary><p>We're in Schuylkill County, PA, with easy access from Pottsville, Schuylkill Haven, Orwigsburg and the surrounding towns. Exact address comes with your booking confirmation.</p></details>
-    <details><summary>What's your cancellation policy?</summary><p>Please give 24 hours' notice to reschedule a private session. Life happens, so just reach out.</p></details>
+    <details><summary>I've never done Pilates. Is that okay?</summary><p>Yes. Most of our clients are. Your first session is private.</p></details>
+    <details><summary>I have an injury or chronic pain. Can I still come?</summary><p>Yes. Tell us when you book and we'll plan around it. If you're under a doctor's care, bring any guidance you've been given.</p></details>
+    <details><summary>Do I need the reformer, or is mat enough?</summary><p>Both work. The reformer is best for rebuilding strength. Mat is the budget-friendly way to keep it up.</p></details>
+    <details><summary>What should I wear?</summary><p>Comfortable clothes and grip socks. We have socks if you forget.</p></details>
+    <details><summary>Where are you located?</summary><p>Schuylkill County, close to Pottsville, Schuylkill Haven and Orwigsburg. You'll get the address when you book.</p></details>
+    <details><summary>What's your cancellation policy?</summary><p>24 hours' notice for private sessions, please.</p></details>
   </div>
 </section>
 
@@ -306,7 +186,7 @@
     <div>
       <span class="eyebrow">Get started</span>
       <h2>Book your first session</h2>
-      <p class="lead">Tell us a little about yourself and what you'd like to work on. We'll reply within one business day to set up a time.</p>
+      <p class="lead">Tell us what you want to work on. We'll reply within one business day.</p>
       <p class="towns"><strong>Serving Schuylkill County:</strong> Pottsville · Schuylkill Haven · Orwigsburg · Tamaqua · Frackville · Minersville · Pine Grove · St. Clair · Shenandoah</p>
     </div>
     <form id="bookform">
@@ -334,7 +214,7 @@
 <footer>
   <div class="wrap">
     <span>© 2026 Riverstone Pilates · Schuylkill County, Pennsylvania</span>
-    <span>Pilates is not a substitute for medical care.</span>
+    <span><a href="about.html">About us</a></span>
   </div>
 </footer>
 
